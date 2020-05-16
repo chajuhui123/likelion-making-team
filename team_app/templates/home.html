@@ -1,0 +1,37 @@
+{% load static %}
+<link rel = "stylesheet" href="{% static 'home.css' %}">
+
+<h1 class = "header">🦁멋사 8기 팀을 짜주겠다 어흥🦁</h1> <br>
+
+<h4 class = "team_name">슬옹팀</h4>
+{% for seul_member in seul %}
+    <h4>{{seul_member}}</h4>
+{% endfor %}
+
+<br>
+
+<h4 class = "team_name">세아팀</h4>
+{% for sea_member in sea %}
+    <h4>{{sea_member}}</h4>
+{% endfor %}
+
+<br>
+
+<h4 class = "team_name">혜선팀</h4>
+{% for hey_member in hey %}
+    <h4>{{hey_member}}</h4>
+{% endfor %}
+
+<br>
+
+<h4 class = "team_name">태원팀</h4>
+{% for tea_member in tea %}
+    <h4>{{tea_member}}</h4>
+{% endfor %}
+
+<!--
+<h4>슬옹팀 {{seul}} </h4> <br>
+<h4>세아팀 {{sea}} </h4> <br>
+<h4>혜선팀 {{hey}} </h4> <br>
+<h4>태원팀 {{tea}} </h4> <br>
+-->
